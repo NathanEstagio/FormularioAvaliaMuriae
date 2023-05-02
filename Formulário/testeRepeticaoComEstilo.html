@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!-- define o tipo de documento como html -->
+<html>
+<!-- abre a tag html -->
+
+<head>
+    <!-- abre a tag head, onde ficam as informações do cabeçalho do documento -->
+    <title>Formulário com CSS personalizado</title> <!-- define o título da página exibido na aba do navegador -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- define a escala inicial e largura do dispositivo -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- linka a folha de estilos do Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- linka o jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- linka o Popper.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- linka o Bootstrap -->
+    <link rel="stylesheet" href="styleRepeticao.css">
+    <!-- linka a folha de estilos personalizada para repetição de campos -->
+</head> <!-- fecha a tag head -->
+
+<body><!-- abre a tag body -->
+    <div style="background-color: white; height: 100px; width: 100%; display: flex; justify-content: center;"><!-- Cria um cabeçalho -->
+        <div style="border: 10px solid white; align-self: center;">
+            <img src="AvaliaMuriae.png" alt="Minha Figura"
+                style="max-height: 80px; max-width: 100%; display: block; margin: 0 auto;">
+        </div>
+    </div>
+
+    <!-- Criação de um container para a página -->
+    <div class="container mt-5">
+        <!-- Criação de um formulário -->
+        <form>
+            <!-- Criação de um grupo de formulário -->
+            <div class="form-group">
+                <!-- Criação de um rótulo para o elemento de seleção de escola -->
+                <label for="escola">Escola:</label>
+                <!-- Criação de um elemento de seleção de escola, com ID "escola" e name "escola" -->
+                <select class="form-control" id="escola" name="escola">
+                    <!-- Criação de uma opção vazia com "disabled" e "selected" para indicar que nada foi selecionado -->
+                    <option value="" disabled selected>Selecione a Escola</option>
+                    <!-- Criação de várias opções para escolas, cada uma com um valor e texto diferentes -->
+                    <option value="Fortini">E M ANTÔNIO FORTINI</option>
+                    <option value="Pereira">E M ANTÔNIO PEREIRA DA SILVA</option>
+                    <option value="Candido">E M CÂNDIDO PORTINARI</option>
+                    <option value="ClaraCastro">E M CLARA DE CASTRO ROGÉRIO</option>
+                    <option value="Ticon">E M CLÉRIA TICON CARNEIRO</option>
+                    <option value="Canedo">E M DR ANTÔNIO CANÊDO</option>
+                    <option value="Ermyro">E M ERMYRO TEIXEIRA SIQUEIRA</option>
+                    <option value="Tanus">E M GILBERTO JOSÉ TANUS BRAZ</option>
+                    <option value="Irene">E M IRENE PEREIRA DIAS NUNES</option>
+                    <option value="Caic">E M JOAQUIM RIBEIRO DE CARVALHO (CAIC)</option>
+                    <option value="MariaAleluia">E M MARIA ALELUIA SOARES BITTENCOURT</option>
+                    <option value="Hastenreiter">E M MARIA HASTENREITER DORNELAS</option>
+                    <option value="Nelson">E M NELSON CARDOSO DE MELO</option>
+                    <option value="Onea">E M ONÉA LOPES GOUVÊA</option>
+                    <option value="Paschoal">E M PASCHOAL DEMARQUE</option>
+                    <option value="Elza">E M PROF ELZA ROGÉRIO</option>
+                    <option value="Esmeralda">E M PROF ESMERALDA VIANNA</option>
+                    <option value="Ionyr">E M PROF IONYR BASTOS DIAS</option>
+                    <option value="Quiteria">E M PROF MARIA QUITÉRIA PÉREZ SCHELB</option>
+                    <option value="Odaleia">E M PROF ODALÉIA OLIVEIRA MORAIS DE AZEVEDO</option>
+                    <option value="Stella">E M PROF STELLA FIDELES</option>
+                    <option value="Terezinha">E M PROF TEREZINHA MARIA OLIVEIRA RIBEIRO</option>
+                    <option value="Zuleima">E M PROF ZULEIMA CÉSAR DE ARAÚJO</option>
+                    <option value="Laviola">E M SEBASTIÃO LAVIOLA</option>
+                    <option value="Sergio">E M SÉRGIO LÚCIO FERNANDES AMARAL</option>
+                    <option value="Sylla">E M SYLLA DE URURAHY MACÊDO</option>
+                    <option value="Yolanda">E M YOLANDA CERQUEIRA GONÇALVES</option>
+                </select>
+            </div>
+            <!-- Cria um grupo de formulário -->
+            <div class="form-group">
+                <!-- Cria um rótulo para o campo "Ano" -->
+                <label for="ano">Ano:</label>
+                <!-- Cria um campo de seleção de ano com identificador "ano" e nome "ano" -->
+                <select class="form-control" id="ano" name="ano">
+                    <!-- Cria uma opção desativada e selecionada por padrão, com o valor vazio -->
+                    <option value="" disabled selected>Selecione o Ano:</option>
+                    <!-- Cria uma opção com valor 1 e texto "1° ANO" -->
+                    <option value="1">1° ANO</option>
+                    <!-- Cria uma opção com valor 2 e texto "2° ANO" -->
+                    <option value="2">2° ANO</option>
+                    <!-- Cria uma opção com valor 3 e texto "3° ANO" -->
+                    <option value="3">3° ANO</option>
+                    <!-- Cria uma opção com valor 4 e texto "4° ANO" -->
+                    <option value="4">4° ANO</option>
+                    <!-- Cria uma opção com valor 5 e texto "5° ANO" -->
+                    <option value="5">5° ANO</option>
+                    <!-- Cria uma opção com valor 6 e texto "6° ANO" -->
+                    <option value="6">6° ANO</option>
+                    <!-- Cria uma opção com valor 7 e texto "7° ANO" -->
+                    <option value="7">7° ANO</option>
+                    <!-- Cria uma opção com valor 8 e texto "8° ANO" -->
+                    <option value="8">8° ANO</option>
+                    <!-- Cria uma opção com valor 9 e texto "9° ANO" -->
+                    <option value="9">9° ANO</option>
+                </select>
+            </div>
+
+            <!-- Cria um grupo de formulário -->
+            <div class="form-group">
+                <!-- Cria um rótulo para o campo "Turma" -->
+                <label for="turma">Turma:</label>
+                <!-- Cria um campo de seleção de turma com identificador "turma" e nome "turma" -->
+                <select class="form-control" id="turma" name="turma">
+                    <!-- Cria uma opção desativada e selecionada por padrão, com o valor vazio -->
+                    <option value="" disabled selected>Selecione uma Turma</option>
+                    <!-- Cria uma opção com valor "A" e texto "A" -->
+                    <option value="A"> A </option>
+                    <!-- Cria uma opção com valor "B" e texto "B" -->
+                    <option value="B"> B </option>
+                    <!-- Cria uma opção com valor "C" e texto "C" -->
+                    <option value="C"> C </option>
+                    <!-- Cria uma opção com valor "D" e texto "D" -->
+                    <option value="D"> D </option>
+                    <!-- Cria uma opção com valor "E" e texto "E" -->
+                    <option value="E"> E </option>
+                    <!-- Cria uma opção com valor "F" e texto "F" -->
+                    <option value="F"> F </option>
+                    <!-- Cria uma opção com valor "G" e texto "G" -->
+                    <option value="G"> G </option>
+                    <!-- Cria uma opção com valor "H" e texto "H" -->
+                    <option value="H"> H </option>
+                    <!-- Cria uma opção com valor "I" e texto "I" -->
+                    <option value="I"> I </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="disciplina">Disciplina:</label>
+                <!-- Select para escolher a disciplina -->
+                <select class="form-control" id="disciplina" name="disciplina">
+                    <option value="" disabled selected>Selecione uma Disciplina</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Lingua Portuguesa</option>
+                </select>
+            </div>
+            <!-- Botão para filtrar a tabela de alunos -->
+            <button id="btnFiltrar" type="submit" class="btn btn-primary">Filtrar</button>
+            <!-- Mostra a mensagem do filtro -->
+            <div id="mensagem"></div>
+
+        </form> <!-- Fecha a tag do formulário anterior -->
+    </div> <!-- Fecha a tag da div anterior -->
+
+    <div class="container mt-5">
+        <form>
+            <label for="alunos">Alunos:</label>
+            <!-- Select para escolher o aluno -->
+            <select class="form-control" id="alunos" name="alunos">
+                <option value="" disabled selected>Selecione o Aluno</option>
+            </select>
+        </form>
+        <br>
+        <form id="formulario">
+            <!-- Script para adicionar 25 questões utilizando radios -->
+            <script type="text/javascript" src="jsRepeticao.js"></script>
+        </form>
+        <br>
+        <form>
+            <!-- Botão para enviar o formulário -->
+            <button id="btnEnviar" type="button" class="btn btn-primary">Enviar</button>
+            <div id="mensagemEnviar" class="alert"></div>
+            <script src="botaoEnviar.js"></script>
+        </form>
+    </div>
+
+</body> <!-- Fecha a tag do body anterior -->
+<br><br>
+
+</html> <!-- Fecha a tag do html anterior -->
